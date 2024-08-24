@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: central-monitoring-service
+  sensor:
+    threshold:
+      humidity: 50
+      temperature: 35
+  kafka:
+    consumer:
+      bootstrap-servers: 127.0.0.1:9092
+      groupid: central-service
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      topic: sensor-topic
+    producer:
+      bootstrap-servers: 127.0.0.1:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      topic: sensor-topic
