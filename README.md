@@ -1,5 +1,3 @@
-Here's an updated `README.md` to include configurable thresholds for temperature and humidity using the `application.yml` file.
-
 ---
 
 # Central Monitoring Service
